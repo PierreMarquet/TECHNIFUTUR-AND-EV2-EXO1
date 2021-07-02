@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Exo1</string>
+    <string name="twitterButtonText">CONNEXION VIA TWITTER</string>
+    <string name="facebookButtonText">CONNEXION VIA FACEBOOK</string>
+    <string name="bloggiesButtonText">CRÉATION D\' UN COMPTE BLOGGIES</string>
+    <string name="connexionButton">CONNEXION</string>
 </resources>

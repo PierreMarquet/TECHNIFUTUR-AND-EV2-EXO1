@@ -4,58 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".TwitterActivity">
 
     <ImageView
-        android:id="@+id/bloggiesImageView"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/twitterImageView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
         android:layout_marginTop="35dp"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bloggies" />
+        app:srcCompat="@drawable/twitter" />
 
-    <Button
-        android:id="@+id/twitterButton"
+    <EditText
+        android:id="@+id/twitterTextEmailAddress"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/twitterButtonText"
-        android:backgroundTint="@android:color/darker_gray"
-        android:textColor="@color/black"
-        android:onClick="sendTwitter"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bloggiesImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/twitterImageView" />
 
-    <Button
-        android:id="@+id/facebookButton"
+    <EditText
+        android:id="@+id/twitterTextPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/facebookButtonText"
-        android:backgroundTint="@android:color/darker_gray"
-        android:textColor="@color/black"
-        android:onClick="sendFacebook"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/twitterButton" />
+        app:layout_constraintTop_toBottomOf="@+id/twitterTextEmailAddress" />
 
     <Button
-        android:id="@+id/bloggiesButton"
+        android:id="@+id/connexionButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/bloggiesButtonText"
+        android:layout_marginTop="60dp"
         android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/connexionButton"
         android:textColor="@color/black"
-        android:onClick="sendBloggies"
+        android:onClick="connexionVerification"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebookButton" />
-
+        app:layout_constraintTop_toBottomOf="@+id/twitterTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
